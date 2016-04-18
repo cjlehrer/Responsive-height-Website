@@ -10,7 +10,7 @@
 			findHeight();
 		}
 
-    //when the window loads, init function is called.  Currently, the init function only calls the findHeight function.
+    		//when the window loads, init function is called.  Currently, the init function only calls the findHeight function.
 		window.onload = init;
 		
 		//resizing window also launches the necessary function. 
