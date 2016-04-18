@@ -1,0 +1,17 @@
+		//Set height of .fill element
+		var windowHeight = $(window).height();
+		var findHeight = function () {
+			var windowHeight = $(window).height();
+			$('.fill').css('min-height',windowHeight + 'px');
+		}
+		
+		//init function fires when page is loaded.
+		var init = function() {
+			findHeight();
+		}
+
+    //when the window loads, init function is called.  Currently, the init function only calls the findHeight function.
+		window.onload = init;
+		
+		//resizing window also launches the necessary function. 
+		window.onresize = findHeight;
